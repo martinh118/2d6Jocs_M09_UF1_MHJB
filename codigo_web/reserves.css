@@ -1,0 +1,75 @@
+body{
+    background-color:#f3a900; 
+    background-image: url('./imagenes/fondo_principal.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+#encabezadoPrincipal{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#botonesUsuario .col{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#cerrarSesion{
+    margin-left: 25px;
+}
+
+#carrito, #user{
+    height: 1cm;
+}
+
+#menu{
+    display:flex-end;
+    justify-content: flex-end;
+}
+
+#logo{
+    margin-left: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+.container .row p{
+    background-color: white; 
+    border: 1px solid #000; 
+    border-radius: 1cm; 
+    text-align: center;
+}
+
+.imagenTaller1, .imagenTaller2{
+    display: flex;
+    border: 2px solid #000;
+    width: 70%;
+   
+}
+
+#pieDePagina{
+    text-align: center;
+}
+
+#pieQR, #pieTwitter, #pieInsta{
+    width: 20%;
+    margin-left: 15px;
+}
+
+
+.botonCompra{
+    margin-left: 60%;
+    color: white;
+    background-color: rgba(232, 123, 14, 0.868); 
+    border: 2px solid #000; 
+    border-radius: 1cm; 
+    text-align: center;
+}

@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Druk Super';
+    src: url('tipografia_drukSuper.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body{
+    background-color:#f3a900; 
+    background-image: url('./imagenes/fondo_principal.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#encabezadoPrincipal{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#botonesUsuario .col{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#cerrarSesion{
+    margin-left: 25px;
+}
+
+#carrito, #user{
+    height: 1cm;
+}
+
+#menu{
+    display:flex-end;
+    justify-content: flex-end;
+}
+
+#menuEncabezado{
+    border-top-left-radius: 60px ;
+    border-bottom-left-radius: 60px;
+}
+
+
+#logo{
+    margin-left: 20px;
+}
+
+#carouselInicial{
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+#filtroBusqueda{
+    margin-top: 1cm;
+    margin-left: 20px;
+
+}
+
+.card{
+    margin-top: 1cm;
+    margin-left: 0.8cm;
+    width: 13rem;
+    text-align: center;
+}
+
+.card-title, .card-text{
+    text-align: center;
+}
+
+#QR{
+    width: 13rem;
+    margin-top:1cm;
+    margin-left: 20px;
+}
+
+#botonFiltrar{
+    margin-top: 1.5cm;
+}
+
+#fotoInstagram{
+    width: 8rem;
+}
+
+#pieDePagina{
+    text-align: center;
+}
+
+#pieQR, #pieTwitter, #pieInsta{
+    width: 20%;
+    margin-left: 15px;
+}
+
+.botonCompra{
+    color: white;
+    background-color: rgba(232, 123, 14, 0.868); 
+    border: 2px solid #000; 
+    border-radius: 1cm; 
+    text-align: center;
+}

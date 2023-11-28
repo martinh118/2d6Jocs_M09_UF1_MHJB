@@ -1,0 +1,47 @@
+body{
+    background-color:#f3a900; 
+    background-image: url('/imagenes/fondo_principal.jpg'); 
+    background-repeat: no-repeat;
+    background-size: 1600px;
+    background-attachment: fixed;
+
+}
+
+#encabezadoPrincipal{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#botonesUsuario .col{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#cerrarSesion{
+    margin-left: 25px;
+}
+
+#carrito, #user{
+    height: 1cm;
+}
+
+#menu{
+    display:flex-end;
+    justify-content: flex-end;
+}
+
+#logo{
+    margin-left: 20px;
+}
+
+#pieDePagina{
+    text-align: center;
+}
+
+#pieQR, #pieTwitter, #pieInsta{
+    width: 20%;
+    margin-left: 15px;
+}

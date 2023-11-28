@@ -1,0 +1,143 @@
+body{
+    background-color:#f3a900; 
+    background-image: url('./imagenes/fondo_principal.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#encabezadoPrincipal{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#botonesUsuario .col{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#cerrarSesion{
+    margin-left: 25px;
+}
+
+#carrito, #user{
+    height: 1cm;
+}
+
+#menu{
+    display:flex-end;
+    justify-content: flex-end;
+}
+
+#logo{
+    margin-left: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+#productos{
+    background-color: white; 
+    border: 1px solid #000; 
+    overflow:scroll;
+
+}
+
+
+#botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#articuloCompra1{
+    position: absolute;
+    background-color: white; 
+    border: 1px solid #000; 
+    border-radius: 1cm; 
+    display: flex;
+    justify-content: center;
+
+}
+
+
+#borrarArticulo1{
+    position: relative;
+    
+}
+
+#imagenArticulo1{
+    display: flex;
+    align-self: flex-start;
+    position: relative;
+    width: 18%;
+}
+
+#datosUsuario{
+    background-color: white; 
+    border: 1px solid #000; 
+    margin-left: 10%;
+}
+
+#datosDireccion, #datosTarjeta{
+    border: 1px solid #000;
+}
+
+#pieDePagina{
+    text-align: center;
+}
+
+#pieQR, #pieTwitter, #pieInsta{
+    width: 20%;
+    margin-left: 15px;
+}
+
+.botonCompra{
+    color: white;
+    background-color: rgba(232, 123, 14, 0.868); 
+    border: 2px solid #000; 
+    border-radius: 1cm; 
+    text-align: center;
+}
+
+.dialeg {
+	position: fixed;
+	left: 0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background-color: rgba(0,0,0,0.1);
+	backdrop-filter: blur(1px);
+}
+
+.centrat {
+	position: absolute;
+	margin: 0;
+	padding: 2rem;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 28rem;
+    border: 2px solid rgb(12, 27, 191);
+	background-color: rgb(36, 76, 255);
+	border-radius: 1.5rem;
+	box-shadow: 8px 8px 24px 0 rgba(0, 0, 0, 0.5);
+}
+
+.botonSeguridad{
+    color: white;
+    background-color: rgba(232, 123, 14, 0.868); 
+    border: 2px solid #000; 
+    border-radius: 1cm; 
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}

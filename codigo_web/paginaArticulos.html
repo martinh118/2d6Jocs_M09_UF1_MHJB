@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="paginaArticulos.css"> <!-- feu referència al vostre fitxer d'estils -->
+    <title>2D6JOCS MHJB</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" media="screen">
+<!-- la crida de les llibreries s’ha de realitzar en aquest ordre: -->
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="bootstrap/js/bootstrap.bundle.js"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  </head>
+
+  <body>
+        <!-- ENCABEZADO -->
+    <div id="encabezadoPrincipal">
+      <a href="index2-0.html"> <input type="image" src="imagenes/LOGO.png" id="logo"></a>
+
+          <div class="col" id="menu">
+            <nav class="navbar navbar-expand-lg offset-1 navbar-light bg-light rounded border border-dark" id="menuEncabezado">
+              <a class="navbar-brand" href="index2-0.html">Home</a>
+              <a class="navbar-brand" href="paginaArticulos.html">Artícles</a>
+              <a class="navbar-brand" href="reserves.html">Reserves</a>
+              <a class="navbar-brand" href="blog.html">Blog</a>
+              <a class="navbar-brand" href="quiSom.html">Qui som?</a>
+
+              <a class="navbar-brand offset-3" href="infoCompra.html"><img id="carrito" src="imagenes/iconos/carrito_compra.png"></a>
+              <a class="navbar-brand" href="infoUser.html"><img id="user" src="imagenes/iconos/user_default.png" class="rounded-circle"></a>
+
+              <div class="row" id="botonesUsuario">
+                <div class="col">
+                  <a class="navbar-link"> Nom d'usuari</a>
+                </div>
+                
+                <div class="row offset-1">
+                  <div class="col">
+                    <a class="navbar-link" href="infoUser.html">Editar perfil</a>
+                    <a class="navbar-link" href="index.html" id="cerrarSesion">Tancar Sessió</a>
+                  </div>
+                  <div >
+                    
+                  </div>
+                </div>
+              </div>  
+
+            </nav>
+          </div>
+    </div>
+
+      <!-- FIN ENCABEZADO -->
+
+      <!--TITULO-->
+    <h1>Artícles</h1>
+      <!--FIN TITULO-->
+      
+      <!--BARRA BUSQUEDA-->
+    <div id="busqueda">
+      <input type="text" value="buscar">&nbsp;&nbsp;
+      <img src="imagenes/iconos/icone-loupe-gris.png" id="lupa">
+    </div>
+      <!--FIN BARRA BUSQUEDA-->
+      
+      
+    <table id="primeraFila">
+      <tr>
+      <!--FILTRAR BUSQUEDA-->
+      <td>
+        
+      <div class="col bg-light border border-dark rounded" id="filtroBusqueda">
+        <a>Filtrar búsqueda:</a>
+        <hr />
+          <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown">
+              Edat <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a class="dropdown-item" href="#">jocs per infants</a></li>
+              <li><a class="dropdown-item" href="#">jocs per nens</a></li>
+              <li><a class="dropdown-item" href="#">jocs per adolescents</a></li>
+              <li><a class="dropdown-item" href="#">adults</a></li>
+              <li><a class="dropdown-item" href="#">totes les edats</a></li>
+            </ul>
+          </div>
+          <br><br>
+          <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown">
+              Nombre de jugadors <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a class="dropdown-item" href="#">1 jugador</a></li>
+              <li><a class="dropdown-item" href="#">2-4 jugadors</a></li>
+              <li><a class="dropdown-item" href="#">2-6 jugadors</a></li>
+              <li><a class="dropdown-item" href="#">2-8 jugadors</a></li>
+              <li><a class="dropdown-item" href="#">+8 jugadors</a></li>
+            </ul>
+          </div>
+          <br><br>
+          <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown">
+              Tipus de jocs <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <a>Cartes</a>
+                <li class="dropdown-item">Estratègia</li>
+                <li class="dropdown-item">Col·leccionables</li>
+                <li class="dropdown-item">Family Game</li>
+                <li class="dropdown-item">Party Game</li>
+              </li>
+              <div class="dropdown-divider"></div>
+              <li>
+                <a>Taula</a>
+                <li class="dropdown-item">Wargames</li>
+                <li class="dropdown-item">Miniatures</li>
+                <li class="dropdown-item">Estratègia</li>
+                <li class="dropdown-item">Rol</li>
+                <li class="dropdown-item">Family Game</li>
+                <li class="dropdown-item">Party Game</li>
+              </li>
+              <div class="dropdown-divider"></div>
+              <li class="dropdown-item">Infantil</li>
+              <div class="dropdown-divider"></div>
+              <li class="dropdown-item">Clàssics</li>
+              <div class="dropdown-divider"></div>
+              <li class="dropdown-item">Rol</li>
+              <div class="dropdown-divider"></div>
+              <li class="dropdown-item">Català</li>
+              <div class="dropdown-divider"></div>
+              <li class="dropdown-item">Puzzles</li>
+            </ul>
+          </div>
+          <br><br>
+          <label for="customRange3" class="form-label">Preu</label>
+          <br>
+          <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+          <br> <br>
+          <div class="text-center">
+            <button id="botonFiltrar" href="paginaArticulos.html" class="botonCompra"><strong> Buscar </strong></button>
+            <br> <br>
+          </div>
+        </div>
+      </td>
+        <!--FIN FILTRAR BUSQUEDA-->
+
+        <!--ARTICULOS-->
+        <td>
+      <div class="col">
+          <div class="card" >
+            <a href="fichaArticulo.html"><input type="image" src="imagenes/articulos/virus.jpg"></a>
+             
+            <div class="card-body">
+              <h5 class="card-title">Virus</h5>
+              <p class="card-text">Tranjis Games</p>
+              <p><strong>14,95€</strong> &nbsp; <button type="button" class="botonCompra" id="liveAlertBtn"><strong>Comprar </strong></button></p>
+            </div>
+          </div>
+        </div>
+        </td>
+
+        <td>
+        <div class="col">  
+        <div class="card">
+          <a href="fichaArticulo.html"><input type="image" src="imagenes/articulos/virus.jpg"></a>
+          <div class="card-body">
+            <h5 class="card-title">Virus</h5>
+            <p class="card-text">Tranjis Games</p>
+            <p><strong>14,95€</strong> &nbsp; <button class="botonCompra" ><strong>Comprar </strong></button></p>
+          </div>
+        </div>
+      </div>
+    </td>
+      <td>
+      <div class="col">
+        <div class="card">
+          <a href="fichaArticulo.html"><input type="image" src="imagenes/articulos/virus.jpg"></a>
+          <div class="card-body">
+            <h5 class="card-title">Virus</h5>
+            <p class="card-text">Tranjis Games</p>
+            <p><strong>14,95€</strong> &nbsp; <button class="botonCompra"><strong>Comprar </strong></button></p>
+          </div>
+        </div>
+      </div>
+      
+        
+      </td>
+      </tr>
+    <!--FIN ARTICULOS-->
+
+    <!--SEGUNDOS ARTICULOS-->
+      <tr>
+        <td></td>
+        <td>
+    
+    
+      <div class="col">
+          <div class="card">
+            <a href="fichaArticulo.html"><input type="image" src="imagenes/articulos/virus.jpg"></a>
+            <div class="card-body">
+              <h5 class="card-title">Virus</h5>
+              <p class="card-text">Tranjis Games</p>
+              <p><strong>14,95€</strong> &nbsp; <button class="botonCompra"><strong>Comprar </strong></button></p>
+            </div>
+          </div>
+        </div>
+      </td>
+
+      <td>
+        <div class="col">  
+        <div class="card">
+          <a href="fichaArticulo.html"><input type="image" src="imagenes/articulos/virus.jpg"></a>
+          <div class="card-body">
+            <h5 class="card-title">Virus</h5>
+            <p class="card-text">Tranjis Games</p>
+            <p><strong>14,95€</strong> &nbsp; <button class="botonCompra"><strong>Comprar </strong></button></p>
+          </div>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="col">
+        <div class="card">
+          <a href="fichaArticulo.html"><input type="image" src="imagenes/articulos/virus.jpg"></a>
+          <div class="card-body">
+            <h5 class="card-title">Virus</h5>
+            <p class="card-text">Tranjis Games</p>
+            <p><strong>14,95€</strong> &nbsp; <button class="botonCompra"><strong>Comprar </strong></button></p>
+          </div>
+        </div>
+      </div>
+    </td>
+  
+      </tr>
+    <!--FIN SEGUNDOS ARTICULOS-->
+
+    <!--TERCEROS ARTICULOS-->
+    <tr>
+      <td></td>
+      <td>
+  
+  
+    <div class="col">
+        <div class="card">
+          <a href="fichaArticulo.html"><input type="image" src="imagenes/articulos/virus.jpg"></a>
+          <div class="card-body">
+            <h5 class="card-title">Virus</h5>
+            <p class="card-text">Tranjis Games</p>
+            <p><strong>14,95€</strong> &nbsp; <button class="botonCompra"><strong>Comprar </strong></button></p>
+          </div>
+        </div>
+      </div>
+    </td>
+
+    <td>
+      <div class="col">  
+      <div class="card">
+        <a href="fichaArticulo.html"><input type="image" src="imagenes/articulos/virus.jpg"></a>
+        <div class="card-body">
+          <h5 class="card-title">Virus</h5>
+          <p class="card-text">Tranjis Games</p>
+          <p><strong>14,95€</strong> &nbsp; <button class="botonCompra"><strong>Comprar </strong></button></p>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="col">
+      <div class="card">
+        <a href="fichaArticulo.html"><input type="image" src="imagenes/articulos/virus.jpg"></a>
+        <div class="card-body">
+          <h5 class="card-title">Virus</h5>
+          <p class="card-text">Tranjis Games</p>
+          <p><strong>14,95€</strong> &nbsp; <button class="botonCompra"><strong>Comprar </strong></button></p>
+        </div>
+      </div>
+    </div>
+  </td>
+
+    </tr>
+  <!--FIN TERCEROS ARTICULOS-->
+    </table>
+    <br><br>
+    <div class="btn-toolbar" id="toolbar" role="toolbar" aria-label="Toolbar with button groups">
+			<div class="btn-group me-2" role="group" aria-label="First group">
+				<button type="button" class="btn btn-default">&laquo;</button>
+				<button type="button" class="btn btn-default">1</button>
+				<button type="button" class="btn btn-default">2</button>
+				<button type="button" class="btn btn-default">3</button>
+				<button type="button" class="btn btn-default">4</button>
+				<button type="button" class="btn btn-default">&raquo;</button>
+			</div>
+		</div>
+    <br><br>
+
+    <!--MENSAJE ALERTA COMPRA-->
+    <div id="liveAlertPlaceholder"></div>
+
+    <!--FIN MENSAJE ALERTA COMPRA-->
+
+    <script src="./accion_js/mensajeCompra.js"></script>
+  </body>
+
+    <footer>
+      <nav class="navbar navbar-light bg-light">
+        <div class="container" id="pieDePagina">
+          <div class="row">
+            <div class="col-3"><strong>2d6 jocs</strong> <br> Botiga de jocs de taula i espai amb taules per jugar.</div>
+            <div class="col-3"><strong>La nostra botiga física:</strong><br>C/ Sant Gervasi, 37 Vilanova i la Geltrú,Barcelona</div>
+            <div class="col-3"><strong>Més sobre nosaltres <br><a class="navbar-brand" href="#">Linktree</a>  </strong></div>
+  
+            
+              <div class="col-3" >
+                <img src="imagenes/QRLinkTree.jpg" id="pieQR">
+                <img src="imagenes/pie_de_pagina/Twitter-logo.svg.png" id="pieTwitter">
+                <img src="imagenes/pie_de_pagina/Instagram_icon.png.webp" id="pieInsta">
+              </div>
+              
+           
+          </div>
+        </div>
+      </nav>
+  
+    </footer>
+
+</html>
